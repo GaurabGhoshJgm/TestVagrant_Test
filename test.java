@@ -1,31 +1,38 @@
-public abstract class SolarSystem {
-    // TODO
-}
+import java.util.*;
 
-public class Planet extends SolarSystem {
-
-    private final String name;
-    private final double x;
-    private final double y;
-
-    public Planet(String name, double x, double y) {
-        this.name = name;
-        this.x = x;
-        this.y = y;
-    }
-
-    public double distanceTo(Planet p) {
-        return Math.sqrt((p.x - this.x) * (p.x - this.x) + (p.y - this.y) * (p.y - this.y));
-    }
-
-}
-
-public class Main {
+public class TestOne {
 
     public static void main(String[] args) {
-        Planet earth = new Planet("Earth", 5.2, 8.3);
-        Planet mars = new Planet("Mars", 4.3, 2.7);
+        Planet earth = new Planet(null, null, 1,"No");
 
-        System.out.println(mars.distanceTo(earth));
+        System.out.println(earth.countsMoon());
     }
+}
+
+class Planet{
+
+    String name;
+    String surGas;
+    int noOfMoon;
+    String ring;
+
+    public Planet(String name,String surGas,int noOfMoon,String ring) {
+        this.name = name;
+        this.surGas = surGas;
+        this.noOfMoon = noOfMoon;
+        this.ring = ring;
+    }
+
+    public void countsMoon(int noOfMoon,String ring){
+        int count = 0;
+        if(ring == "Yes"){
+            count = count + this.noOfMoon;
+        }
+        System.out.println(count);
+    }
+
+    public void maxGas(String surGas){
+        
+    }
+
 }

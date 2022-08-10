@@ -6,7 +6,7 @@ Email address - gaurabghoshjgm@gmail.com */
 
 import java.util.*;
 
-public class Test {
+public class test {
 
     public static void main(String[] args) {
         Planet earth = new Planet(null, null, 1,"No");

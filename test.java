@@ -1,6 +1,12 @@
+/* Name - Gaurab Ghosh
+College - Techno India University 
+Year of passing - 2022 
+Phone Number  - 8617007445
+Email address - gaurabghoshjgm@gmail.com */
+
 import java.util.*;
 
-public class TestOne {
+public class Test {
 
     public static void main(String[] args) {
         Planet earth = new Planet(null, null, 1,"No");
